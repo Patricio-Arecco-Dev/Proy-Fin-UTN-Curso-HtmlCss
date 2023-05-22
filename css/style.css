@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+:root {
+    --colorGrisOscuro: rgb(104, 103, 103);
+    --colorGrisBoro: gainsboro;
+    --heightHeader: 92px;
+    --heightMain: 1000px;
+    --heightNav: 30px;
+
+
+}
+
+/* Aqui empieza el CSS del Header*/
+header {
+    position: fixed;
+    top: 0px;
+    background-color: black;
+    height: var(--heightHeader);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.gridContainerHeader {
+    display: grid;
+    height: var(--heightHeader);
+    width: 100%;
+    grid-template-columns: 250px 1fr 100px;
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#headerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#headerLeft img {
+    height: 70px;
+    padding: 5px;
+    border: 5px double var(--colorGrisOscuro);
+    border-radius: 10px;
+    background-color: var(--colorGrisBoro);
+}
+
+
+#headerCenter h1 {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#headerRight {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 5px double var(--colorGrisOscuro);
+    border-radius: 10px;
+    background-color: var(--colorGrisBoro);
+    padding: 0px;
+    margin: 0px;
+}
+
+#headerRight img {
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    margin: 2px auto;
+}
+
+#headerRight h2 {
+    color: black;
+    font-size: small;
+    padding: 0px;
+    margin: 2px auto;
+}
+
+
+/* Aqui empieza el CSS del Nav*/
+nav {
+
+    position: fixed;
+    top: var(--heightHeader);
+    background-color: red;
+    height: var(--heightNav);
+    width: 100%;
+    margin: 0px;
+
+}
+
+#navList {
+    height: var(--heightNav);
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navItem {
+    text-decoration: underline;
+    list-style-type: none;
+    float: left;
+    margin: 4px 50px;
+    padding: 0px;
+}
+
+
+
+
+/* Aqui empieza el CSS del Main*/
+main {
+    display: grid;
+    height: var(--heightMain);
+    width: 100%;
+    grid-template-columns: 190px 1fr;
+}
+aside {
+    background-color: black;
+}
+
+section {
+    padding: 0px;
+    margin: 0px;
+    height: var(--heightMain);
+    width: 100%;
+    background-image: url("/img/main/backgroundFlag.jpg");
+    background-size: cover;
+    background-position: 0px 100px;
+    padding: 10px;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+#articleVideos{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 5px double var(--colorGrisOscuro);
+    border-radius: 20px;
+}
+
+#articleNews{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 5px double var(--colorGrisOscuro);
+    border-radius: 20px;
+}
+
+#articleInterview{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 5px double var(--colorGrisOscuro);
+    border-radius: 20px;
+}
+
+/* Aqui empieza el CSS del Footer*/
+.flexContainerFooter {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.gridContainerTop {
+    display: grid;
+    height: 70px;
+    width: 100%;
+    grid-template-columns: 190px 1fr;
+    gap: 10px;
+    padding: 5px;
+}
+
+
+#logoFooter {
+    display: flex;
+    width: 180px;
+}
+
+#logoFooter img {
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+#socialNetworks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#socialNetworks img {
+    width: 30px;
+    padding: 0px;
+    margin: 20px;
+}
+
+.flexContainerBottom {
+    height: 35px;
+    width: 100%;
+    color: white;
+    font-size: x-small;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+#copyrights {
+    padding: 2px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: x-small;
+
+}
