@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Circuitos de F1 @ PEA</title>
+  </head>
+  <body>
+    <header>
+      <div class="gridContainerHeader">
+        <div id="headerLeft">
+          <img src="./img/header/f1_logo.png" alt="logo de sf1" />
+        </div>
+        <div id="headerCenter">
+          <h1>Siente la Formula 1</h1>
+        </div>
+        <div id="headerRight">
+          <img src="./img/header/gral-user.png" alt="userFace" />
+          <h2 class="user">Usuario:</h2>
+        </div>
+      </div>
+      <nav>
+        <ul id="navList">
+          <li class="navItem"><a href="./index.html">Inicio</a></li>
+          <li class="navItem"><a href="./pilotos.html">Equipos</a></li>
+          <li class="navItem"><a href="./equipos.html">Circuitos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <ul id="asideList"></ul>
+      </aside>
+      <section class="flex_container">
+        <div class="flex_circuito" id="circuito_01" style="order: 1">
+          <h4>Bahrain</h4>
+          <h5>Formula1 Gulf Air Bahrain Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Bahrain-Circuit.png"
+              alt="Bahrain Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Bahrain-Flag.png"
+              alt="Bahrain Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_02" style="order: 2">
+          <h4>Saudi Arabia</h4>
+          <h5>Formula1 STC Saudi Arabian Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/SaudiArabia-Circuit.png"
+              alt="Saudi Arabia Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/SaudiArabia-Flag.png"
+              alt="Saudi Arabia Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_03" style="order: 3">
+          <h4>Australia</h4>
+          <h5>Formula1 Rolex Australian Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Australia-Circuit.png"
+              alt="Australia Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Australia-Flag.png"
+              alt="Australia Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_04" style="order: 4">
+          <h4>Azerbaijan</h4>
+          <h5>Formula1 Azerbaijan Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Azerbaijan-Circuit.png"
+              alt="Azerbaijan Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Azerbaijan-Flag.png"
+              alt="Azerbaijan Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_05" style="order: 5">
+          <h4>United States Miami</h4>
+          <h5>Formula1 Crypto.com Miami Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Miami-Circuit.png"
+              alt="Miami Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Miami-Flag.png"
+              alt="Miami Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_06" style="order: 6">
+          <h4>Italy Emilia Romagna</h4>
+          <h5>Formula1 Qatar Airways Gran Premio Delle'Emilia Romagna</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Imola-Circuit.png"
+              alt="Imola Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Imola-Flag.png"
+              alt="Imola Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_07" style="order: 7">
+          <h4>Monaco</h4>
+          <h5>Formula1 Grand Prix de Monaco</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Monaco-Circuit.png"
+              alt="Monaco Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Monaco-Flag.png"
+              alt="Monaco Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_08" style="order: 8">
+          <h4>Spain</h4>
+          <h5>Formula1 AWS Gran Premio De España</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Spain-Circuit.png"
+              alt="Spain Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Spain-Flag.png"
+              alt="Spain Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_09" style="order: 9">
+          <h4>Canada</h4>
+          <h5>Formula1 Pirelli Grand Prix Du Canada</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Canada-Circuit.png"
+              alt="Canada Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Canada-Flag.png"
+              alt="Canada Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_10" style="order: 10">
+          <h4>Austria</h4>
+          <h5>Formula1 Grosser Pries Von Ostereich</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Austria-Circuit.png"
+              alt="Austria Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Austria-Flag.png"
+              alt="Austria Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_11" style="order: 11">
+          <h4>Great Britain</h4>
+          <h5>Formula1 Aramco British Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/GreatBritain-Circuit.png"
+              alt="Great Britain Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/GreatBritain-Flag.png"
+              alt="Great Britain Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_12" style="order: 12">
+          <h4>Hungary</h4>
+          <h5>Formula1 Qatar Airways Hungarian Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Hungary-Circuit.png"
+              alt="Hungary Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Hungary-Flag.png"
+              alt="Hungary Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_13" style="order: 13">
+          <h4>Belgium</h4>
+          <h5>Formula1 MSC Cruises Belgian Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Belgium-Circuit.png"
+              alt="Belgium Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Belgium-Flag.png"
+              alt="Belgium Flag"
+            />
+          </div>
+        </div>
+
+        <div class="flex_circuito" id="circuito_14" style="order: 14">
+          <h4>Netherlands</h4>
+          <h5>Formula1 Heineken Dutch Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Netherlands-Circuit.png"
+              alt="Netherlands Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Netherlands-Flag.png"
+              alt="Netherlands Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_15" style="order: 15">
+          <h4>Italy Monza</h4>
+          <h5>Formula1 Pirelli Gran Prremio D'Italia</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Monza-Circuit.png"
+              alt="Monza Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Monza-Flag.png"
+              alt="Monza Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_16" style="order: 16">
+          <h4>Singapore</h4>
+          <h5>Formula1 Singapore Airlines Singapore Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Singapore-Circuit.png"
+              alt="Singapore Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Singapore-Flag.png"
+              alt="Singapore Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_17" style="order: 17">
+          <h4>Japan</h4>
+          <h5>Formula1 Lenovo Japanese Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Japan-Circuit.png"
+              alt="Japan Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Japan-Flag.png"
+              alt="Japan Flag"
+            />
+          </div>
+        </div>
+
+        <div class="flex_circuito" id="circuito_18" style="order: 18">
+          <h4>Qatar</h4>
+          <h5>Formula1 Qatar Airways Qatar Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Qatar-Circuit.png"
+              alt="Qatar Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Qatar-Flag.png"
+              alt="Qatar Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_19" style="order: 19">
+          <h4>United States Texas</h4>
+          <h5>Formula1 Lenovo United States Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Texas-Circuit.png"
+              alt="Texas Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Texas-Flag.png"
+              alt="Texas Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_20" style="order: 20">
+          <h4>Mexico</h4>
+          <h5>Formula1 Gran Premio de la Ciudad de Mexico</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Mexico-Circuit.png"
+              alt="Mexico Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Mexico-Flag.png"
+              alt="Mexico Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_21" style="order: 21">
+          <h4>Brazil</h4>
+          <h5>Formula1 Rolex Grande Premio de Sao Paulo</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/Brazil-Circuit.png"
+              alt="Brazil Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/Brazil-Flag.png"
+              alt="Brazil Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_22" style="order: 22">
+          <h4>United States Las Vegas</h4>
+          <h5>Formula1 Heineken Silver Las Vegas Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/LasVegas-Circuit.png"
+              alt="Las Vegas Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/LasVegas-Flag.png"
+              alt="Las Vegas Flag"
+            />
+          </div>
+        </div>
+        <div class="flex_circuito" id="circuito_23" style="order: 23">
+          <h4>Abu Dhabi</h4>
+          <h5>Formula1 Etihad Airways Abuhhabi Grand Prix</h5>
+          <div class="flex_circuito_img">
+            <img
+              class="flex_circuito_img_circ"
+              src="./img/circuits/AbuDhabi-Circuit.png"
+              alt="AbuDhabi Circuit"
+            />
+            <img
+              class="flex_circuito_img_flag"
+              src="./img/circuits/AbuDhabi-Flag.png"
+              alt="AbuDhabi Flag"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flexContainerFooter">
+      <div class="gridContainerTop">
+        <div id="logoFooter">
+          <img src="./img/footer/f1_logo.svg" alt="logo de sf1" />
+        </div>
+        <div id="socialNetworks">
+          <img src="./img/footer/fone.webp" alt="numero telefonico" />
+          <img src="./img/footer/mail.webp" alt="correo electronico" />
+          <img src="./img/footer/instagram.webp" alt="cuenta de instragram" />
+          <img src="./img/footer/whatsapp.webp" alt="numero de whatsapp" />
+        </div>
+      </div>
+      <div class="flexContainerBottom">
+        <h2 id="copyrights">
+          Siente Formula 1 No es marca registrada. SienteFormulaUno.com es una
+          plataforma web desprotegida por Derecho de Autor. No tiene derechos
+          reservados.
+        </h2>
+      </div>
+    </footer>
+  </body>
+</html>
