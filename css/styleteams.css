@@ -145,100 +145,8 @@ section {
     padding: 10px 10px 10px 10px;
 }
 
-.grid_container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 20px;
-}
+/* Aqui empieza el CSS del Main de la hoja de los los equipos*/
 
-#articleVideos {
-    display: flex;
-    flex-direction: column;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    border: 5px double var(--colorGrisOscuro);
-    border-radius: 20px;
-}
-
-#articleVideos h3 {
-    font-size: xx-large;
-    text-align: center;
-    border: 5px double var(--colorGrisOscuro);
-    border-radius: 10px;
-    background-color: var(--colorGrisBoro);
-    padding: 2px;
-    margin: 10px;
-}
-
-#articleVideos video {
-    width: 675px;
-    padding: 10px;
-    margin: 0px;
-}
-
-
-#articleNews {
-    display: flex;
-    flex-direction: column;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    border: 5px double var(--colorGrisOscuro);
-    border-radius: 20px;
-    padding: 10px;
-}
-
-
-#articleNews h4 {
-    font-size: large;
-    text-align: center;
-    border: 5px double var(--colorGrisOscuro);
-    border-radius: 10px;
-    background-color: var(--colorGrisBoro);
-    padding: 2px;
-    margin: 10px;
-}
-
-
-#articleNews video {
-    padding: 0px;
-    margin: 0px;
-}
-
-#articleNews p {
-    font-size: medium;
-    text-align: center;
-    border: 5px double var(--colorGrisOscuro);
-    border-radius: 10px;
-    background-color: var(--colorGrisBoro);
-    padding: 2px;
-    margin: 5px;
-}
-
-#articleInterview {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    border: 5px double var(--colorGrisOscuro);
-    border-radius: 20px;
-    padding: 15px;
-    background-color: gainsboro;
-
-}
-
-#articleInterview img {
-    width: 300px;
-    margin: 10px;
-    float: left;
-}
-
-
-/* Aqui empieza el CSS del Main de la hoja de los pilotos*/
 .flex_container {
     display: flex;
     flex-wrap: wrap;
@@ -246,44 +154,8 @@ section {
     justify-content: space-around;
 }
 
-.flex_piloto {
-    display: flex;
-    flex-direction: column;
-    border: 5px double var(--colorGrisOscuro);
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
-    width: 250px;
-}
 
-.flex_piloto h4 {
-    font-size: larger;
-    font-weight: 900;
-    text-align: center;
-    background-color: white;
-    opacity: 0.85;
-    padding: 0px 5px;
-    margin: 0px;
-}
-
-.flex_piloto h5 {
-    font-size: medium;
-    font-weight: 900;
-    text-align: center;
-    background-color: white;
-    opacity: 0.85;
-    padding: 0px 5px;
-    margin: 0px;
-}
-
-.flex_piloto img {
-    width: 200px;
-    padding: 0px;
-    margin: 0px;
-}
-
-/* Aqui empieza el CSS del Main de la hoja de los circuitos*/
-.flex_circuito {
+.flex_equipo {
     display: flex;
     flex-direction: column;
     border: 5px double var(--colorGrisOscuro);
@@ -293,7 +165,7 @@ section {
     width: 500px;
 }
 
-.flex_circuito h4 {
+.flex_equipo h4 {
     font-size: larger;
     font-weight: 900;
     text-align: center;
@@ -303,7 +175,7 @@ section {
     margin: 0px;
 }
 
-.flex_circuito h5 {
+.flex_equipo h5 {
     font-size: medium;
     font-weight: 900;
     text-align: center;
@@ -313,24 +185,125 @@ section {
     margin: 0px;
 }
 
-.flex_circuito_img {
+.flex_equipo_img {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: row;
 }
 
-.flex_circuito_img_circ {
-    width: 60%;
+.flex_equipo_img_car {
+    align-self: center;
+    /* width: 30%; */
     padding: 10px;
 }
 
-.flex_circuito_img_flag {
+.flex_equipo_img_simbol {
     padding: 0px;
     margin: 10px;
     align-self: center;
     scale: 50%;
 }
+
+/*  Aqui empieza la nueva prueba*/
+.teamsMainTeamDIV{
+    order: 11;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 5px double var(--colorGrisOscuro);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+}
+
+.teamsMainTeamDataDIV{
+    display: flex;
+    flex-direction: row;
+    width: 490px;
+    height: 70px;
+}
+
+.teamsMainTeamDataSecDIV{
+    display: flex;
+    flex-direction: column; 
+    width: 400px;  
+    height: 100%; 
+}
+
+.teamsMainTeamDataNameDIV{
+    background-color: white;
+    opacity: 0.85;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 0px;
+    width: 100%;
+    height: 50%; 
+}
+
+.teamsMainTeamDataNameDIV h4{
+    font-size: larger;
+    font-weight: 900;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.teamsMainTeamDataInfoDIV{
+    background-color: white;
+    opacity: 0.85;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 50%; 
+}
+
+.teamsMainTeamDataInfoDIV h5{
+    font-size: medium;
+    font-weight: 900;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+.teamsMainTeamSymbolDIV{
+    background-color: white;
+    opacity: 0.85;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 70px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.teamsMainTeamSymbolIMG{
+    width: 70px;
+    padding: 0px;
+    margin: auto;
+}
+
+
+.teamsMainTeamCarImgDIV{
+    display: flex;
+    width: 490px;
+    justify-content: center;
+    align-content: center;
+}
+
+.teamsMainTeamCarImgIMG{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
 
 
 
