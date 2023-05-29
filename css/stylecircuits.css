@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     font-family: 'Kanit', sans-serif;
@@ -21,7 +21,8 @@ body {
 
 /* Aqui empieza el CSS del Header*/
 header {
-    position: fixed;
+    position: sticky;
+    top: 0px;
     z-index: 100;
     background-color: black;
     height: var(--heightHeader);
@@ -42,6 +43,12 @@ header {
     align-content: center;
 }
 
+#headerLeft a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 #headerLeft img {
     height: 60px;
     border: 5px double var(--colorGrisOscuro);
@@ -53,8 +60,12 @@ header {
 
 #headerCenter h1 {
     color: white;
-    font-size: xx-large;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 5px;
     text-align: center;
+    margin: 0px;
 }
 
 #headerRight {
@@ -86,6 +97,9 @@ header {
 
 /* Aqui empieza el CSS del Nav*/
 nav {
+    position: sticky;
+    top: var(--heightHeader);
+    z-index: 100;
     background-color: red;
     height: var(--heightNav);
     width: 100%;
@@ -118,8 +132,8 @@ nav {
 
 /* Aqui empieza el CSS del Main*/
 main {
-    position: relative;
-    top: var(--addHeaderNav);
+    position: static;
+    z-index: -1;
     display: grid;
     height: var(--heightMain);
     width: 100%;
