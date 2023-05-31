@@ -16,14 +16,13 @@ body {
     --heightHeader: 85px;
     --heightMain: auto;
     --heightNav: 25px;
-    --addHeaderNav: 110px;
 }
 
 /* Aqui empieza el CSS del Header*/
 header {
     position: sticky;
     top: 0px;
-    z-index: 100;
+    z-index: 4;
     background-color: black;
     height: var(--heightHeader);
     width: 100%;
@@ -65,7 +64,7 @@ header {
     font-style: italic;
     letter-spacing: 5px;
     text-align: center;
-    margin: 0px;
+    margin: auto;
 }
 
 #headerRight {
@@ -98,7 +97,7 @@ header {
 nav {
     position: sticky;
     top: var(--heightHeader);
-    z-index: 100;
+    z-index: 4;
     background-color: red;
     height: var(--heightNav);
     width: 100%;
@@ -121,7 +120,7 @@ nav {
 
 .navItem a {
     color: black;
-    font-weight: 900;
+    font-weight: 600;
     padding: 0px 5px;
 }
 
@@ -131,18 +130,9 @@ nav {
 
 /* Aqui empieza el CSS del Main*/
 main {
-    position: static;
     z-index: -1;
-    display: grid;
     height: var(--heightMain);
     width: 100%;
-    grid-template-columns: 190px 1fr;
-    padding: 0px;
-    margin: 0px;
-}
-
-aside {
-    background-color: black;
     padding: 0px;
     margin: 0px;
 }

@@ -23,7 +23,7 @@ body {
 header {
     position: sticky;
     top: 0px;
-    z-index: 100;
+    z-index: 4;
     background-color: black;
     height: var(--heightHeader);
     width: 100%;
@@ -99,7 +99,7 @@ header {
 nav {
     position: sticky;
     top: var(--heightHeader);
-    z-index: 100;
+    z-index: 4;
     background-color: red;
     height: var(--heightNav);
     width: 100%;
@@ -122,7 +122,7 @@ nav {
 
 .navItem a {
     color: black;
-    font-weight: 900;
+    font-weight: 600;
     padding: 0px 5px;
 }
 
@@ -137,7 +137,7 @@ main {
     display: grid;
     height: var(--heightMain);
     width: 100%;
-    grid-template-columns: 190px 1fr;
+    grid-template-columns: 280px 1fr;
     padding: 0px;
     margin: 0px;
 }
@@ -172,6 +172,7 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 .flex_piloto {
@@ -179,38 +180,38 @@ section {
     flex-direction: column;
     border: 5px double var(--colorGrisOscuro);
     border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
-    width: 250px;
+    padding: 5px;
+    margin: 5px;
+    width: 220px;
 }
 
-.flex_piloto h4 {
+.flex_piloto>h4 {
     font-size: larger;
-    font-weight: 900;
+    font-weight: 600;
     text-align: center;
     background-color: white;
-    opacity: 0.85;
-    padding: 0px 5px;
-    margin: 0px;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 0.95;
+    width: 100%;
+    margin: 0px auto;
 }
 
-.flex_piloto h5 {
+.flex_piloto>h5 {
     font-size: medium;
-    font-weight: 900;
+    font-weight: 600;
     text-align: center;
     background-color: white;
-    opacity: 0.85;
-    padding: 0px 5px;
-    margin: 0px;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0.95;
+    width: 100%;
+    margin: 0px auto;
 }
 
 .flex_piloto img {
-    width: 200px;
+    width: 160px;
     padding: 0px;
     margin: 0px;
 }
-
-
 
 /* Aqui empieza el CSS del Footer*/
 .flexContainerFooter {

@@ -23,7 +23,7 @@ body {
 header {
     position: sticky;
     top: 0px;
-    z-index: 100;
+    z-index: 4;
     background-color: black;
     height: var(--heightHeader);
     width: 100%;
@@ -99,7 +99,7 @@ header {
 nav {
     position: sticky;
     top: var(--heightHeader);
-    z-index: 100;
+    z-index: 4;
     background-color: red;
     height: var(--heightNav);
     width: 100%;
@@ -122,7 +122,7 @@ nav {
 
 .navItem a {
     color: black;
-    font-weight: 900;
+    font-weight: 600;
     padding: 0px 5px;
 }
 
@@ -133,11 +133,11 @@ nav {
 /* Aqui empieza el CSS del Main*/
 main {
     position: static;
+    width: 100%;
+    height: var(--heightMain);
     z-index: -1;
     display: grid;
-    height: var(--heightMain);
-    width: 100%;
-    grid-template-columns: 190px 1fr;
+    grid-template-columns: 280px 1fr;
     padding: 0px;
     margin: 0px;
 }
@@ -156,7 +156,7 @@ section {
     background-image: url("/img/main/backgroundFlag.jpg");
     background-size: cover;
     background-position: 0px 0px;
-    padding: 10px 10px 10px 10px;
+    /* padding: 0px 0px 0px 0px; */
 }
 
 /* Aqui empieza el CSS del Main de la hoja de los los equipos*/
@@ -168,89 +168,37 @@ section {
     justify-content: space-around;
 }
 
-
-.flex_equipo {
-    display: flex;
-    flex-direction: column;
-    border: 5px double var(--colorGrisOscuro);
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
-    width: 500px;
-}
-
-.flex_equipo h4 {
-    font-size: larger;
-    font-weight: 900;
-    text-align: center;
-    background-color: white;
-    opacity: 0.85;
-    padding: 0px 5px;
-    margin: 0px;
-}
-
-.flex_equipo h5 {
-    font-size: medium;
-    font-weight: 900;
-    text-align: center;
-    background-color: white;
-    opacity: 0.85;
-    padding: 0px 5px;
-    margin: 0px;
-}
-
-.flex_equipo_img {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-}
-
-.flex_equipo_img_car {
-    align-self: center;
-    /* width: 30%; */
-    padding: 10px;
-}
-
-.flex_equipo_img_simbol {
-    padding: 0px;
-    margin: 10px;
-    align-self: center;
-    scale: 50%;
-}
-
-/*  Aqui empieza la nueva prueba*/
 .teamsMainTeamDIV {
-    order: 11;
     display: flex;
     flex-direction: column;
     gap: 20px;
     border: 5px double var(--colorGrisOscuro);
     border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
-    width: 500px;
+    padding: 0px;
+    margin: 20px 10px 10px 10px;
+    width: 440px;
 }
 
 .teamsMainTeamDataDIV {
     display: flex;
     flex-direction: row;
-    width: 490px;
+    width: 440px;
     height: 70px;
+    margin: 4px;
 }
 
 .teamsMainTeamDataSecDIV {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 350px;
     height: 100%;
 }
 
 .teamsMainTeamDataNameDIV {
     background-color: white;
-    opacity: 0.85;
+    opacity: 0.95;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 16px 0px 0px 0px;
     padding: 2px;
     margin: 0px;
     width: 100%;
@@ -258,8 +206,8 @@ section {
 }
 
 .teamsMainTeamDataNameDIV h4 {
-    font-size: larger;
-    font-weight: 900;
+    font-size: large;
+    font-weight: 600;
     text-align: center;
     padding: 0px;
     margin: 0px;
@@ -267,9 +215,9 @@ section {
 
 .teamsMainTeamDataInfoDIV {
     background-color: white;
-    opacity: 0.85;
+    opacity: 0.95;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 0px 0px 0px 16px;
     padding: 0px;
     margin: 0px;
     width: 100%;
@@ -278,7 +226,7 @@ section {
 
 .teamsMainTeamDataInfoDIV h5 {
     font-size: medium;
-    font-weight: 900;
+    font-weight: 500;
     text-align: center;
     padding: 4px;
     margin: 0px;
@@ -286,9 +234,9 @@ section {
 
 .teamsMainTeamSymbolDIV {
     background-color: white;
-    opacity: 0.85;
+    opacity: 0.95;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 0px 16px 16px 0px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -298,7 +246,7 @@ section {
 }
 
 .teamsMainTeamSymbolIMG {
-    width: 70px;
+    width: 60px;
     padding: 0px;
     margin: auto;
 }
@@ -306,7 +254,7 @@ section {
 
 .teamsMainTeamCarImgDIV {
     display: flex;
-    width: 490px;
+    width: auto;
     justify-content: center;
     align-content: center;
 }
@@ -315,11 +263,6 @@ section {
     padding: 0px;
     margin: 0px;
 }
-
-
-
-
-
 
 /* Aqui empieza el CSS del Footer*/
 .flexContainerFooter {
