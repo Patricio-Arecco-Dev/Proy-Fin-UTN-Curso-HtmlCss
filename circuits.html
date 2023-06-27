@@ -32,23 +32,26 @@
         </ul>
       </nav>
     </header>
-    
+
     <aside class="aside">
       <div class="aside_detalles">
         <img src="./img/circuits/allunocircuits.png" alt="circuitos varios" />
-        <h4>País:</h4>
-        <h4>Nombre:</h4>
-        <h5>Largo:</h5>
-        <h5>Curvas:</h5>
+        <h4 id="driPais">País:</h4>
+        <h4 id="driNombre">Nombre:</h4>
+        <h5 id="driLargo">Largo:</h5>
+        <h5 id="driCurvas">Curvas:</h5>
+        <h5 id="driVueltas">Vueltas:</h5>
+        <h5 id="driRecorrido">Recorrido:</h5>
+        <h5 id="driInaugurado">Inaugurado:</h5>
       </div>
       <div id="aside_logo">
         <img src="./img/footer/f1_logo.svg" alt="logo de sf1" />
       </div>
-    </aside> 
-    
+    </aside>
+
     <main>
       <section class="flex_container">
-        <div class="flex_circuito" id="circuito_01">
+        <div class="flex_circuito" id="circuito_01" onclick="funCircuits(1)">
           <h4>Bahrain</h4>
           <h5>Formula1 Gulf Air Bahrain Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -64,7 +67,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_02">
+        <div class="flex_circuito" id="circuito_02" onclick="funCircuits(2)">
           <h4>Saudi Arabia</h4>
           <h5>Formula1 STC Saudi Arabian Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -80,7 +83,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_03">
+        <div class="flex_circuito" id="circuito_03" onclick="funCircuits(3)">
           <h4>Australia</h4>
           <h5>Formula1 Rolex Australian Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -96,7 +99,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_04">
+        <div class="flex_circuito" id="circuito_04" onclick="funCircuits(4)">
           <h4>Azerbaijan</h4>
           <h5>Formula1 Azerbaijan Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -112,7 +115,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_05">
+        <div class="flex_circuito" id="circuito_05" onclick="funCircuits(5)">
           <h4>United States Miami</h4>
           <h5>Formula1 Crypto.com Miami Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -128,7 +131,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_06">
+        <div class="flex_circuito" id="circuito_06" onclick="funCircuits(6)">
           <h4>Italy Emilia Romagna</h4>
           <h5>Formula1 Qatar Airways Gran Premio Delle'Emilia Romagna</h5>
           <div class="flex_circuito_img">
@@ -144,7 +147,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_07">
+        <div class="flex_circuito" id="circuito_07" onclick="funCircuits(7)">
           <h4>Monaco</h4>
           <h5>Formula1 Grand Prix de Monaco</h5>
           <div class="flex_circuito_img">
@@ -160,7 +163,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_08">
+        <div class="flex_circuito" id="circuito_08" onclick="funCircuits(8)">
           <h4>Spain</h4>
           <h5>Formula1 AWS Gran Premio De España</h5>
           <div class="flex_circuito_img">
@@ -176,7 +179,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_09">
+        <div class="flex_circuito" id="circuito_09" onclick="funCircuits(9)">
           <h4>Canada</h4>
           <h5>Formula1 Pirelli Grand Prix Du Canada</h5>
           <div class="flex_circuito_img">
@@ -192,7 +195,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_10">
+        <div class="flex_circuito" id="circuito_10" onclick="funCircuits(10)">
           <h4>Austria</h4>
           <h5>Formula1 Grosser Pries Von Ostereich</h5>
           <div class="flex_circuito_img">
@@ -208,7 +211,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_11">
+        <div class="flex_circuito" id="circuito_11" onclick="funCircuits(11)">
           <h4>Great Britain</h4>
           <h5>Formula1 Aramco British Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -224,7 +227,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_12">
+        <div class="flex_circuito" id="circuito_12" onclick="funCircuits(12)">
           <h4>Hungary</h4>
           <h5>Formula1 Qatar Airways Hungarian Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -240,7 +243,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_13">
+        <div class="flex_circuito" id="circuito_13" onclick="funCircuits(13)">
           <h4>Belgium</h4>
           <h5>Formula1 MSC Cruises Belgian Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -257,7 +260,7 @@
           </div>
         </div>
 
-        <div class="flex_circuito" id="circuito_14">
+        <div class="flex_circuito" id="circuito_14" onclick="funCircuits(14)">
           <h4>Netherlands</h4>
           <h5>Formula1 Heineken Dutch Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -273,7 +276,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_15">
+        <div class="flex_circuito" id="circuito_15" onclick="funCircuits(15)">
           <h4>Italy Monza</h4>
           <h5>Formula1 Pirelli Gran Prremio D'Italia</h5>
           <div class="flex_circuito_img">
@@ -289,7 +292,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_16">
+        <div class="flex_circuito" id="circuito_16" onclick="funCircuits(16)">
           <h4>Singapore</h4>
           <h5>Formula1 Singapore Airlines Singapore Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -305,7 +308,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_17">
+        <div class="flex_circuito" id="circuito_17" onclick="funCircuits(17)">
           <h4>Japan</h4>
           <h5>Formula1 Lenovo Japanese Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -322,7 +325,7 @@
           </div>
         </div>
 
-        <div class="flex_circuito" id="circuito_18">
+        <div class="flex_circuito" id="circuito_18" onclick="funCircuits(18)">
           <h4>Qatar</h4>
           <h5>Formula1 Qatar Airways Qatar Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -338,7 +341,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_19">
+        <div class="flex_circuito" id="circuito_19" onclick="funCircuits(19)">
           <h4>United States Texas</h4>
           <h5>Formula1 Lenovo United States Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -354,7 +357,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_20">
+        <div class="flex_circuito" id="circuito_20" onclick="funCircuits(20)">
           <h4>Mexico</h4>
           <h5>Formula1 Gran Premio de la Ciudad de Mexico</h5>
           <div class="flex_circuito_img">
@@ -370,7 +373,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_21">
+        <div class="flex_circuito" id="circuito_21" onclick="funCircuits(21)">
           <h4>Brazil</h4>
           <h5>Formula1 Rolex Grande Premio de Sao Paulo</h5>
           <div class="flex_circuito_img">
@@ -386,7 +389,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_22">
+        <div class="flex_circuito" id="circuito_22" onclick="funCircuits(22)">
           <h4>United States Las Vegas</h4>
           <h5>Formula1 Heineken Silver Las Vegas Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -402,7 +405,7 @@
             />
           </div>
         </div>
-        <div class="flex_circuito" id="circuito_23">
+        <div class="flex_circuito" id="circuito_23" onclick="funCircuits(23)">
           <h4>Abu Dhabi</h4>
           <h5>Formula1 Etihad Airways Abuhhabi Grand Prix</h5>
           <div class="flex_circuito_img">
@@ -424,7 +427,11 @@
     <footer class="flexContainerFooter">
       <div class="gridContainerTop">
         <div id="socialNetworks">
-          <img src="./img/footer/fone.webp" alt="numero telefonico" title="+54 9 3743 585787"/>
+          <img
+            src="./img/footer/fone.webp"
+            alt="numero telefonico"
+            title="+54 9 3743 585787"
+          />
           <a
             href="mailto:patrcioarecco@gmail.com?subject=contacto&body=Escriba aquí sus comentarios"
           >
@@ -449,5 +456,6 @@
         </h2>
       </div>
     </footer>
+    <script src="./js/circuits.js"></script>
   </body>
 </html>
