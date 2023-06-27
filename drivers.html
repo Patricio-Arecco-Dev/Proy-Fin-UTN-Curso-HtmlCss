@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styleheader.css" />
-    <link rel="stylesheet" href="./css/stylefooter.css" />
+    <link rel="stylesheet" href="./css/styleZhaf.css" />
     <link rel="stylesheet" href="./css/styledrivers.css" />
     <title>Pilotos de F1 @ PEA</title>
   </head>
@@ -20,9 +19,11 @@
         <div id="headerCenter">
           <h1>Siente la Formula 1</h1>
         </div>
-        <div id="headerRight">
-          <img src="./img/header/gral-user.png" alt="userFace" />
-          <h2 class="user">Usuario:</h2>
+        <div id="headerRightContainer">
+          <div id="headerRight">
+            <img src="./img/header/gral-user.png" alt="userFace" />
+            <h2 class="user">Usuario:</h2>
+          </div>
         </div>
       </div>
       <nav>
@@ -33,122 +34,201 @@
         </ul>
       </nav>
     </header>
-    <aside class="aside_piloto">
-      <div class="aside_piloto_detalles">
+    <aside class="aside">
+      <div class="aside_detalles">
         <img src="./img/drivers/allonepilots.png" alt="colage de pilotos" />
-        <h4>Nombre:</h4>
-        <h4>Apellido:</h4>
-        <h5>Edad:</h5>
-        <h5>Años en F1:</h5>
-        <h5>Campeonatos:</h5>
-        <h5>Podios:</h5>
+        <h4 id="driNombre" >Nombre:</h4>
+        <h4 id="driApellido" >Apellido:</h4>
+        <h5 id="driPais" >País:</h5>
+        <h5 id="driNacio" >Fecha Nac:</h5>
+        <h5 id="driDebut" >Año Debut:</h5>
+        <h5 id="driCamp" >Campeonatos:</h5>
       </div>
-      <div id="aside_piloto_logo">
+      <div id="aside_logo">
         <img src="./img/footer/f1_logo.svg" alt="logo de sf1" />
       </div>
     </aside>
-
     <main>
       <section class="flex_container">
         <div class="flex_piloto" id="piloto_01" style="order: 1">
           <h4>MAX VERSTAPEN</h4>
           <h5>Red Bull Racing</h5>
-          <img src="./img/drivers/piloto_01.png" alt="MAX VERSTAPEN" />
+          <img
+            src="./img/drivers/piloto_01.png"
+            alt="MAX VERSTAPEN"
+            onclick="funDriver(1)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_02" style="order: 20">
           <h4>LOGAN SARGEANT</h4>
           <h5>Williams</h5>
-          <img src="./img/drivers/piloto_02.png" alt="LOGAN SARGEANT" />
+          <img
+            src="./img/drivers/piloto_02.png"
+            alt="LOGAN SARGEANT"
+            onclick="funDriver(2)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_04" style="order: 9">
           <h4>LANDO NORRIS</h4>
           <h5>Mc Laren</h5>
-          <img src="./img/drivers/piloto_04.png" alt="LANDO NORRIS" />
+          <img
+            src="./img/drivers/piloto_04.png"
+            alt="LANDO NORRIS"
+            onclick="funDriver(4)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_10" style="order: 11">
           <h4>PIERRE GASLY</h4>
           <h5>Alpine</h5>
-          <img src="./img/drivers/piloto_10.png" alt="PIERRE GASLY" />
+          <img
+            src="./img/drivers/piloto_10.png"
+            alt="PIERRE GASLY"
+            onclick="funDriver(10)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_11" style="order: 2">
           <h4>SERGIO PEREZ</h4>
           <h5>Red Bull Racing</h5>
-          <img src="./img/drivers/piloto_11.png" alt="SERGIO PEREZ" />
+          <img
+            src="./img/drivers/piloto_11.png"
+            alt="SERGIO PEREZ"
+            onclick="funDriver(11)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_14" style="order: 3">
           <h4>FERNANDO ALONSO</h4>
           <h5>Aston Martin</h5>
-          <img src="./img/drivers/piloto_14.png" alt="FERNANDO ALONSO" />
+          <img
+            src="./img/drivers/piloto_14.png"
+            alt="FERNANDO ALONSO"
+            onclick="funDriver(14)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_16" style="order: 8">
           <h4>CHARLES LECLERC</h4>
           <h5>Ferrari</h5>
-          <img src="./img/drivers/piloto_16.png" alt="CHARLES LECLERC" />
+          <img
+            src="./img/drivers/piloto_16.png"
+            alt="CHARLES LECLERC"
+            onclick="funDriver(16)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_18" style="order: 4">
           <h4>LANCE STROLL</h4>
           <h5>Aston Martin</h5>
-          <img src="./img/drivers/piloto_18.png" alt="LANCE STROLL" />
+          <img
+            src="./img/drivers/piloto_18.png"
+            alt="LANCE STROLL"
+            onclick="funDriver(18)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_20" style="order: 14">
           <h4>KEVIN MAGNUSSEN</h4>
           <h5>Haas F1 Team</h5>
-          <img src="./img/drivers/piloto_20.png" alt="KEVIN MAGNUSSEN" />
+          <img
+            src="./img/drivers/piloto_20.png"
+            alt="KEVIN MAGNUSSEN"
+            onclick="funDriver(20)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_21" style="order: 18">
           <h4>NICK DE VRIES</h4>
           <h5>AlphaTauri</h5>
-          <img src="./img/drivers/piloto_21.png" alt="NICK DE VRIES" />
+          <img
+            src="./img/drivers/piloto_21.png"
+            alt="NICK DE VRIES"
+            onclick="funDriver(21)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_22" style="order: 17">
           <h4>YUKI TSUNODA</h4>
           <h5>AlphaTauri</h5>
-          <img src="./img/drivers/piloto_22.png" alt="YUKI TSUNODA" />
+          <img
+            src="./img/drivers/piloto_22.png"
+            alt="YUKI TSUNODA"
+            onclick="funDriver(22)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_23" style="order: 19">
           <h4>ALEXANDER ALBON</h4>
           <h5>Williams</h5>
-          <img src="./img/drivers/piloto_23.png" alt="ALEXANDER ALBON" />
+          <img
+            src="./img/drivers/piloto_23.png"
+            alt="ALEXANDER ALBON"
+            onclick="funDriver(23)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_24" style="order: 16">
           <h4>ZHOU GUANYU</h4>
           <h5>Alfa Romeo</h5>
-          <img src="./img/drivers/piloto_24.png" alt="ZHOU GUANYU" />
+          <img
+            src="./img/drivers/piloto_24.png"
+            alt="ZHOU GUANYU"
+            onclick="funDriver(24)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_27" style="order: 13">
           <h4>NICO HULKENBERG</h4>
           <h5>Haas F1 Team</h5>
-          <img src="./img/drivers/piloto_27.png" alt="NICO HULKENBERG" />
+          <img
+            src="./img/drivers/piloto_27.png"
+            alt="NICO HULKENBERG"
+            onclick="funDriver(27)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_31" style="order: 12">
           <h4>ESTEBAN OCON</h4>
           <h5>Alpine</h5>
-          <img src="./img/drivers/piloto_31.png" alt="ESTEBAN OCON" />
+          <img
+            src="./img/drivers/piloto_31.png"
+            alt="ESTEBAN OCON"
+            onclick="funDriver(31)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_44" style="order: 5">
           <h4>LEWIS HAMILTON</h4>
           <h5>Mercedes</h5>
-          <img src="./img/drivers/piloto_44.png" alt="LEWIS HAMILTON" />
+          <img
+            src="./img/drivers/piloto_44.png"
+            alt="LEWIS HAMILTON"
+            onclick="funDriver(44)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_55" style="order: 7">
           <h4>CARLOS SAINZ</h4>
           <h5>Ferrari</h5>
-          <img src="./img/drivers/piloto_55.png" alt="CARLOS SAINZ" />
+          <img
+            src="./img/drivers/piloto_55.png"
+            alt="CARLOS SAINZ"
+            onclick="funDriver(55)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_63" style="order: 6">
           <h4>GEORGE RUSSELL</h4>
           <h5>Mercedes</h5>
-          <img src="./img/drivers/piloto_63.png" alt="GEORGE RUSSELL" />
+          <img
+            src="./img/drivers/piloto_63.png"
+            alt="GEORGE RUSSELL"
+            onclick="funDriver(63)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_77" style="order: 15">
           <h4>VALTTERI BOTTAS</h4>
           <h5>Alfa Romeo</h5>
-          <img src="./img/drivers/piloto_77.png" alt="VALTTERI BOTTAS" />
+          <img
+            src="./img/drivers/piloto_77.png"
+            alt="VALTTERI BOTTAS"
+            onclick="funDriver(77)"
+          />
         </div>
         <div class="flex_piloto" id="piloto_82" style="order: 10">
           <h4>OSCAR PIASTRI</h4>
           <h5>Mc Laren</h5>
-          <img src="./img/drivers/piloto_82.png" alt="OSCAR PIASTRI" />
+          <img
+            src="./img/drivers/piloto_82.png"
+            alt="OSCAR PIASTRI"
+            onclick="funDriver(82)"
+          />
         </div>
       </section>
     </main>
@@ -156,7 +236,11 @@
     <footer class="flexContainerFooter">
       <div class="gridContainerTop">
         <div id="socialNetworks">
-          <img src="./img/footer/fone.webp" alt="numero telefonico" title="+54 9 3743 585787"/>
+          <img
+            src="./img/footer/fone.webp"
+            alt="numero telefonico"
+            title="+54 9 3743 585787"
+          />
           <a
             href="mailto:patrcioarecco@gmail.com?subject=contacto&body=Escriba aquí sus comentarios"
           >
@@ -181,5 +265,6 @@
         </h2>
       </div>
     </footer>
+    <script src="./js/drivers.js"></script>
   </body>
 </html>

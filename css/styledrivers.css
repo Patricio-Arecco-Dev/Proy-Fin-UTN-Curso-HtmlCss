@@ -19,14 +19,8 @@ section {
     padding: 10px 10px 10px 10px;
 }
 
-.grid_container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 20px;
-}
-
 /* Aqui empieza el CSS del Aside de los pilotos*/
+/*
 .aside_piloto {
     display: grid;
     grid-template-columns: auto;
@@ -69,9 +63,7 @@ h5 {
 #aside_piloto_logo img {
     width: 150px;
     margin: 10px;
-
-
-}
+}*/
 
 /* Aqui empieza el CSS del Main de la hoja de los pilotos*/
 .flex_container {
@@ -119,11 +111,5 @@ h5 {
     padding: 0px;
     display: block;
     margin: 0px auto;
-}
-
-
-
-#piloto_01 :hover{
-
 }
 
